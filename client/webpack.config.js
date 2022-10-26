@@ -25,23 +25,24 @@ module.exports = () => {
 
       // Injects our custom service worker
       new InjectManifest({
-        swSrc: './src-database.js', //-----------> ??
-        swDest: 'src-database.js',
+        swSrc: "./src-sw.js", //-----------> ??
+        swDest: "src-sw.js",
       }),
 
-      new GenerateSW(),
       new WebpackPwaManifest({
         // TODO: Create a manifest.json:
+        fingerprints: false,
+        inject: true,
         name: "My Progressive Web App",
         short_name: "MyPWA",
         description: "My awesome Progressive Web App!",
         background_color: "#ffffff",
         crossorigin: "use-credentials", //can be null, use-credentials or anonymous
-        start_url: "./",
-
+        start_url: "/",
+        publicPath: "./",
         icons: [
           {
-            src: path.resolve("assets/images/logo.png"),
+            src: path.resolve("src/images/logo.png"),
             sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
             destination: path.join("assets/", "icons"),
           },
