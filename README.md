@@ -33,37 +33,17 @@ The user should clone the repository from GitHub and download Node.js. This appl
 
 ## Usage Information
 
-- If you would like to view a video on walkthrougth the application demonstrating, please go to my [Deploy](https://radiant-forest-41027.herokuapp.com/)
+- Please open the link below and click on the "Install" button. Then you will see the message and click OK. After you installed the text editor, open it on your local machine.
+ [Deploy](https://radiant-forest-41027.herokuapp.com/)
 
 ---
 
 <a name="test"></a>
 
 ## Test ScreenShot
- You can create, read, update, and delete users and thoughts, and add and delete reactions and friends using these urls:
 
-http://localhost:3001/api/user
-
-http://localhost:3001/api/user/:id (required to delete, update, or just to read one category)
-To post a user - JSON being sent will be this: { "username": "username", "email": "email@example.com" }
-
-http://localhost:3001/api/user/:userId/friends/:friendsId (required to delete and add a friend)
-
-http://localhost:3001/api/thoughts
-To create a thought - JSON being send will be formated like this: { "thoughtText": "This is an example thought", "username": "username of person creating the thought" }
-
-http://localhost:3001/api/thoughts/:id (required to delete, update, or just to read one tag)
-
-http://localhost:3001/api/thougts/:thoughtsId/reactions (required to add a reaction to a thought)
-To create a reaction - JSON being send will be formated like this: { "reactionBody": "This is an example reaction", "username": "username of person creating the reaction" }
-
-http://localhost:3001/api/thoughts/:thoughtsId/reactions/:reactionsId (required to delete a reaction from a thought)
-
-![Screen-Shot](./Assets/getAllUsers.png)
-![Screen-Shot](./Assets/getAllThought.png)
-![Screen-Shot](./Assets/getThoughtbyId.png)
-![Screen-Shot](./Assets/AddReaction.png)
-![Screen-Shot](./Assets/deleteReaction.png)
+![Screen-Shot](./Assets/TextEditor.png)
+![Screen-Shot](./Assets/Storage.png)
 
 <a name="questions"></a>
 
