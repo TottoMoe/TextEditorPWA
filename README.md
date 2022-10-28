@@ -8,7 +8,7 @@
 
 ## Description
 
-This application was to build a Social Network API built using Mongoose and is ready to be connect to the front end. User just need to use Insomnia in order to run the application.
+This application was to build a Text Editor with the Progressive Web Applications(PWA). We used a package called idb, which is a lightweight wrapper around the IndexedDB API. It features a number of data persistence techniques that serve as redundancy in case is not supported by the brower, and the application can function offline. It is useful for storing and retrieving data, and is used by companies like Google and Mozilla. 
 
 ---
 
@@ -25,7 +25,7 @@ This application was to build a Social Network API built using Mongoose and is r
 
 ## Installation Instructions
 
-The user should clone the repository from GitHub and download Node.js. This application also requires to npm install node_modules, package-lock.json, and npm install MySql
+The user should clone the repository from GitHub and download Node.js. This application also requires to npm install node_modules, package-lock.json, and npm run build
 
 ---
 
